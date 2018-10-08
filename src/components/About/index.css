@@ -1,0 +1,111 @@
+/* 第一个页面 */
+.about{
+    display: flex;
+    flex-direction:column;
+    height:100vh;
+    flex:1;
+}
+.about > main{
+    display: flex;
+    flex-grow:1;
+}
+.about >main .profile-image{
+    flex:0.84;
+    padding:40px 30px;
+    margin-left:8.3333%;
+}
+.about .profile-image .img-container{
+    width:150px;
+    padding:10px;
+    margin-bottom: 5px; 
+}
+.about .profile-image .img-container img{
+    width:100%;
+    border:5px solid #e8e8e8;
+    border-radius:100%;
+    box-shadow: 0 0 0 10px rgba(0,0,0,.1);
+    height:auto;
+    margin: 15px auto;
+    position:relative;
+    z-index:2;
+    transition:all .3s ease-in;
+}
+.about .profile-image .img-container img:hover{
+    box-shadow: 0 0 0 12px rgba(0,0,0,.1);
+}
+.about .profile-image > h2{
+    color:#50626c;
+    font-family: "PT Sans",sans-serif;
+    font-size:45px;
+    font-weight: 700;
+    line-height: .8em;
+}
+.about .profile-image > h3{
+    color:#4c4c50;
+    font-family: "Merriweather";
+    font-size:16px;
+    line-height:1.8em;
+    margin-top:10px;
+    padding-top:10px;
+    position:relative;
+}
+.about .profile-image > h3::before{
+    background:none repeat scroll 0 0 #4c4c50;
+    content:'';
+    height:1px;
+    left:0;
+    position:absolute;
+    width:110px;
+    top:0;
+}
+.about >main .bio{
+    flex:1;
+    background: url(https://i.loli.net/2017/09/27/59ca8443c545e.jpg) no-repeat center;
+    background-size:cover;
+    position:relative;
+    padding:50px 30px;
+}
+.about >main .bio::after{
+    content:'';
+    background:none repeat scroll 0 0 rgba(255,255,255,.65);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    padding:50px 20px;
+    height:100%;
+}
+.about .bio .bio-inner{
+    position: relative;
+    z-index:1;
+    width:83.33%;
+}
+.about .bio .bio-inner .bio-description{
+    color:#555;
+    font-size:16px;
+}
+.about .bio .bio-inner .bio-description > p{
+    margin:5px 0;
+}
+.about .bio-inner .buttons{
+    margin:30px auto;
+ } 
+.about .buttons .btn{
+    position:relative;
+    overflow:hidden;
+    background:none repeat scroll 0 0 #50626c;
+    border: 2px solid #50626c;
+    font-weight:700;
+    color:#fff;
+    font-size:13px;
+    margin:15px auto 5px;
+    padding:15px 30px;
+    display: inline-block;
+    vertical-align:middle;
+
+}
+.about .bio .buttons .btn:hover{
+    background:#fff;
+    color:#50626c;
+    border-color:#50626c;
+}

@@ -1,0 +1,106 @@
+@media screen and (max-width:1256px){
+    .about .bio .bio-inner{
+        width:100%;
+    }
+}
+@media screen and (max-width:1056px){
+    .skill-page .skill-info{
+        display: block;
+    }
+    .contact-page > .contacts{
+        display: block;
+    }
+    .contact-page > .contacts #allmap{
+        max-width:600px;
+        height:400px;
+        margin:0 auto;
+    }
+}
+@media screen and (max-width:992px){
+    .about {
+        overflow-y: scroll;
+    }
+    .about > main{
+        display: block;
+    }
+}
+@media screen and (max-width:769px){
+  .page .left{
+     height:auto;
+     right:0;
+     width:100%;
+     z-index:3;
+     background:rgba(0,0,0,.9);
+     opacity:1;
+  }
+  .page .left.active{
+      height:100%;
+  }
+  .page .left .title-icons{
+      width:100%;
+      display: flex;
+      align-items:center;
+      justify-content:space-between;
+  }
+  nav.left .phone-icons{
+      display: block;
+  }
+ .left .phone-icons.active > .open-icon{ 
+     display: block;
+  }
+ .left .phone-icons > .open-icon{ 
+     display: none;
+ }
+ .left .phone-icons.active > .close-icon{ 
+     display: none;
+  }
+ .left .phone-icons > .close-icon{ 
+     display: block;
+ }
+  .page .left h2{
+      margin:0 0 0 20px;
+  }
+  .page .left>ol{
+      display: none;
+  }
+  .page .left.active>ol{
+      display: block;
+      width:250px;
+      margin-top:10px;
+  }
+  .page .left>ol >li{
+      width:250px;
+  }
+  .page .left>.links{
+      display: none;
+  }
+  .page .left.active>.links{
+      display: block;
+      width:250px;
+  }
+  .page >ul.introduction{
+      margin-left:0;
+  }
+  .about .bio .bio-inner{
+        width:83.333%;
+  }
+}
+@media screen and (max-width:430px){
+  .about .bio .bio-inner{
+        width:100%;
+  }
+  .contact-page .address ul.location p{
+      font-size:20px !important;
+  }
+}
+@media screen and (max-width:350px){
+    .project-page .project-tech a{
+        margin-right:5px;
+    }
+    .contact-page .address ul.location li img{
+        margin-left:10px;
+    }
+    .contact-page .address ul.location li p{
+        margin-left:10px;
+    }
+}

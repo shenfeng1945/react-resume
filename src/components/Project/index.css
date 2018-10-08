@@ -1,0 +1,75 @@
+/* 第二个页面 */
+.project-page{
+    height:100vh;
+    flex:1;
+    overflow-y: scroll;
+}
+.project-page > h2{
+    text-align: center;
+    font-size:40px;
+    padding-top:50px;
+    margin-bottom:55px;
+
+}
+.project-page > ul{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    max-width:600px;
+    margin:0 auto;
+}
+.project-page > ul li.project{
+    width:100%;
+    background:white;
+    color: #4e4e4e;
+    border-radius: 3px;
+    border: 1px solid #edeeee;
+    margin:0 0 30px;
+    font-weight:400;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 30px;
+}
+.project-page > ul li.project > h2{
+    padding:12px 20px;
+    font-weight: 400;
+    font-size:16px;
+
+}
+.project-page > ul li >img{
+    width:100%;
+    padding:0 20px;
+}
+.project-page  .project-intro{
+    padding: 10px 0;
+}
+.project-page  .project-intro >p{
+    padding:6px 20px;
+}
+.project-page  .project-tech{
+    display: flex;
+    align-items:center;
+    border-top:1px solid #eeefef;
+    position:relative;
+    padding:5px 0;
+}
+.project-page  .project-tech > .icons{
+    display: flex;
+    margin-left:20px;
+}
+.project-page  .project-tech svg{
+    margin:8px 16px 8px 0;
+}
+.project-page  .project-tech >._links{
+    position: absolute;
+    right:0;
+}
+.project-page  .project-tech a{
+    padding:5px 10px;
+    border-radius:30px;
+    position: relative;
+    margin-right:12px;
+    display: inline-block;
+}
+.project-page  .project-tech a:hover{
+    color:#20a0ff;
+    border-color:#20a0ff;
+}

@@ -1,0 +1,112 @@
+*,*::after,*::before{padding:0;margin:0;box-sizing:border-box;}
+h1,h2,h3,h4,h5{font-weight: normal;}
+.resume-pdf ul{padding-left:40px;}
+.resume-pdf a{text-decoration:none;}
+.resume-pdf a:hover{
+    color: #23527c;
+    text-decoration: underline;
+}
+body{
+    font-size:15px;
+}
+.resume-pdf p{line-height:1.8;}
+.resume-pdf .icon{
+    width:25px;
+    height:25px;
+    vertical-align:middle;
+}
+.resume-pdf .clearfix::after{
+    display: table;
+    content: '';
+}
+.resume-pdf .border{
+    border-top:1px solid rgba(0,0,0,.3);
+}
+h4.title{
+    font-size:18px;
+    margin: 10px 0;
+}
+.resume-pdf .card{
+    padding: 10px 0;
+}
+header{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    border: 1px solid #e6e6e6;
+    padding-top:20px;
+}
+header .head{
+    margin:0 auto;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+header .head > .img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top:20px;
+}
+header >.message{
+    display: flex;
+    list-style:none;
+    margin:0 auto;
+    padding:5px 0;
+}
+header >.message > li{
+    display: flex;
+    align-items:center;
+    padding:10px 0;
+    margin-left:30px;
+}
+header >.message > li > span{
+    margin-left:10px;
+    flex:1;
+}
+main{
+    padding:0 20px;
+    border: 1px solid #e6e6e6;
+    margin-top: 10px;
+}
+section .icons{
+  width:50px;
+  padding:0 10px;
+  margin-top:10px;
+}
+section .info{
+    flex:1;
+    padding: 0 10px;
+}
+.resume-pdf .about-me{
+    display: flex;
+}
+.resume-pdf .education{
+    display: flex;
+}
+.resume-pdf .education .info{
+    flex:1;
+}
+.resume-pdf .skills{
+    display: flex;
+}
+.resume-pdf .skills h3.skill-head{
+    font-size:16px;
+    color:#2291c3;
+}
+.resume-pdf .projects{
+    display: flex;
+}
+.projects li > a{
+    font-size:16px;
+}
+.resume-pdf .links{
+    display: flex;
+    padding:20px 0;
+    justify-content: space-around;
+}
+.resume-pdf .skill-con,.project-con{
+    margin-top:10px;
+}
