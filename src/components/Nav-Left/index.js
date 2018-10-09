@@ -1,25 +1,37 @@
 import React, { Component } from 'react'
 import './index.css'
 import { NavLink } from "react-router-dom";
+import classNames from 'classnames'
 
 export default class NavLeft extends Component {
+    constructor() {
+        super()
+        this.state = {
+            showNavLeft: false
+        }
+    }
+    toggleIcon = () => {
+        this.setState({showNavLeft: !this.state.showNavLeft})
+    }
+    toggleTab = () => {
+       this.setState({showNavLeft: false})
+    }
     render() {
         return (
-            <nav className="left">
+            <nav className={classNames('left',{active: this.state.showNavLeft})}>
                 <div className="title-icons">
                     <h2>简历 Resume</h2>
-                    <div className="phone-icons active">
-                        <svg className="p-icon open-icon">
-                            <use xlinkHref="#icon-more"></use>
-                        </svg>
-                        <svg className="p-icon close-icon">
-                            <use xlinkHref="#icon-close"></use>
-                        </svg>
+                    <div className="phone-icons" onClick={this.toggleIcon}>
+                        {
+                            this.state.showNavLeft ?
+                                <svg className="p-icon"><use xlinkHref="#icon-close"></use></svg> :
+                                <svg className="p-icon"><use xlinkHref="#icon-more"></use></svg>
+                        }
                     </div>
-                </div >
+                </div>
                 <ol>
-                    <li className="tab-lists first active">
-                        <NavLink exact to="/" activeClassName="active">
+                    <li className="tab-lists first">
+                        <NavLink exact to="/" activeClassName="active" onClick={this.toggleTab}>
                             <div className="head">
                                 <i className="sprite"></i>
                             </div>
@@ -27,7 +39,7 @@ export default class NavLeft extends Component {
                         </NavLink>
                     </li>
                     <li className="tab-lists second">
-                        <NavLink to="/project" activeClassName="active">
+                        <NavLink to="/project" activeClassName="active" onClick={this.toggleTab}>
                             <div className="head">
                                 <i className="sprite"></i>
                             </div>
@@ -35,7 +47,7 @@ export default class NavLeft extends Component {
                         </NavLink>
                     </li>
                     <li className="tab-lists third">
-                        <NavLink to="/skill" activeClassName="active">
+                        <NavLink to="/skill" activeClassName="active" onClick={this.toggleTab}>
                             <div className="head">
                                 <i className="sprite"></i>
                             </div>
@@ -43,7 +55,7 @@ export default class NavLeft extends Component {
                         </NavLink>
                     </li>
                     <li className="tab-lists fourth">
-                        <NavLink to="/contact" activeClassName="active">
+                        <NavLink to="/contact" activeClassName="active" onClick={this.toggleTab}>
                             <div className="head">
                                 <i className="sprite"></i>
                             </div>
@@ -75,7 +87,7 @@ export default class NavLeft extends Component {
                         </a >
                     </div >
                     <p>Open source:
-                <a href="https://github.com/shenfeng1945/resume" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a href="https://github.com/shenfeng1945/resume" target="_blank" rel="noopener noreferrer">Github</a>
                     </p>
                     <p>Made By shenfeng 2018</p>
                 </footer >

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import './index.css'
+import eventEmitter from '../../utils/event'
 
 const Img = styled.img`
   width: 25px;
@@ -8,6 +9,9 @@ const Img = styled.img`
   margin: 8px 16px 8px 0;
 `
 export default class Project extends Component {
+    showDialog = () => {
+        eventEmitter.emit('dialog', 'https://shenfeng1945.xyz/weme/weme.mp4')
+    }
     render() {
         return (
             <div className="project-page">

@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import NavLeft from './components/Nav-Left'
 import ResumePdf from './components/ResumePdf'
+import Dialog from './components/Dialog'
 
 const path = window.location.pathname
 
@@ -21,6 +22,7 @@ const Routes = () => {
                             <Route path="/project" component={Project} />
                             <Route path="/skill" component={Skill} />
                             <Route path="/contact" component={Contact} />
+                            <Dialog />
                         </div> :
                         <Route path="/resume-pdf" component={ResumePdf} />
                 }
