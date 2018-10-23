@@ -32,7 +32,7 @@ export default class About extends Component {
                             </div>
                             <div className="buttons">
                                 <a className="btn" href="mailto:liuzhichao1993@foxmail.com">Hire Me</a>
-                                <a className="btn" href="./刘智超-前端开发.pdf" target="_blank">Download Resume</a>
+                                <a className="btn" href="https://shenfeng1945.xyz/resume/刘智超-前端开发.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
                             </div>
                         </div>
                     </div>

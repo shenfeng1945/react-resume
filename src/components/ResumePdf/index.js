@@ -95,7 +95,6 @@ export default class ResumePdf extends Component {
                                 <li className="skill card border">
                                     <h3 className="skill-head">前端框架</h3>
                                     <ul className="skill-con">
-                                        <li>能够进行模块化编程，使用Gulp、RequireJS、Webpack等多种方式处理工作流。</li>
                                         <li>熟悉Angular框架，能够独立架构小型项目，理解重要概念如: 生命周期，装饰器，单例服务等。能够封装功能组件和指令，配合RxJS控制异步流程。</li>
                                         <li>了解React框架及相关流行库的使用，理解重要概念如: 生命周期，虚拟Dom，redux原理等,并具有项目实战经验。</li>
                                         <li>了解Vue的基本使用，并了解其双向绑定和响应式原理。</li>
