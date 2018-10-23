@@ -10,7 +10,14 @@ const Img = styled.img`
 `
 export default class Project extends Component {
     showDialog = () => {
-        eventEmitter.emit('dialog', 'https://shenfeng1945.xyz/weme/weme.mp4')
+        eventEmitter.emit('dialog', {url: 'https://shenfeng1945.xyz/weme/weme.mp4',isVideo: true})
+    }
+    openDialog = () => {
+        if(document.documentElement.clientWidth < 640){
+            window.open('https://icook.shentop.com')
+            return;
+        } 
+        eventEmitter.emit('dialog',{url:'https://icook.shentop.com',isVideo: false,avatar: 'https://i.loli.net/2018/10/23/5bce8699d3ea6.png'})
     }
     render() {
         return (
@@ -63,34 +70,34 @@ export default class Project extends Component {
                                 </svg>
                             </div>
                             <div className="_links">
-                                <a href="https://icook.shentop.com" target="_blank" rel="noopener noreferrer" className="preview border">
+                                <a onClick={() => this.openDialog()} className="preview border">
                                     Preview
                         </a>
                             </div>
                         </div>
                     </li>
-                    <li class="project">
+                    <li className="project">
                         <h2>慧护爱真(工作项目 2017.11-2018.1)</h2>
                         <img src="https://i.loli.net/2018/03/26/5ab8a13747499.png" alt="" />
-                        <div class="project-intro">
+                        <div className="project-intro">
                             <p>这是一个护理，保健仪器类的商城管理平台，拥有移动端页面，后台管理页面和网点端页面。后台可以发布各种类型商品，商城页面可以登陆后，填写自己的收获地址并支付购买，订单确定后，对应网点的客服人员会帮你送货上门，并上门安装，之后还可以享受维修和保养服务。</p>
                             <p>功能：登录注册，加入购物车，付款，退换货，维修保养，开发票，会员，优惠券</p>
                         </div>
-                        <div class="project-tech">
-                            <div class="icons">
+                        <div className="project-tech">
+                            <div className="icons">
                                 <Img src="http://shop.e-caretech.net/web/images/favicon.png" />
-                                <svg class="icon">
+                                <svg className="icon">
                                     <use xlinkHref="#icon-js"></use>
                                 </svg>
-                                <svg class="icon" title="jquery">
+                                <svg className="icon" title="jquery">
                                     <use xlinkHref="#icon-jquery"></use>
                                 </svg>
-                                <svg class="icon" title="webpack">
+                                <svg className="icon" title="webpack">
                                     <use xlinkHref="#icon-webpack"></use>
                                 </svg>
                             </div>
-                            <div class="_links">
-                                <a href="http://shop.e-caretech.net/" target="_blank" rel="noopener noreferrer" class="preview border">
+                            <div className="_links">
+                                <a href="http://shop.e-caretech.net/" target="_blank" rel="noopener noreferrer" className="preview border">
                                     Preview
                                 </a>
                             </div>
