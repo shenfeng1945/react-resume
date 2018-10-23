@@ -7,7 +7,7 @@ export default class ResumePdf extends Component {
             <div className="resume-pdf">
                 <header>
                     <div className="head">
-                        <p><strong>在线简历：</strong><a href="https://shenfeng1945.github.io/resume" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/resume</a></p>
+                        <p><strong>在线简历：</strong><a href="https://react-resume.netlify.com" target="_blank" rel="noopener noreferrer">https://react-resume.netlify.com</a></p>
                         <div className="img">
                             <img src="https://s1.ax1x.com/2017/10/15/JZrUH.png" alt="头像" width="100" height="100" />
                         </div>
@@ -70,7 +70,8 @@ export default class ResumePdf extends Component {
                         <div className="info">
                             <h4 className="title">工作经历</h4>
                             <div className="card border">
-                                <p>上映科技,2017.11-2018.3,Web工程师</p>
+                                <p>上映科技,2017.10-2018.3,前端工程师</p>
+                                <p>天体万物智能科技,2018.4-2018.10,前端工程师</p>
                             </div>
                         </div>
                     </section >
@@ -82,45 +83,38 @@ export default class ResumePdf extends Component {
                             <h4 className="title">职业技能</h4>
                             <ul className="skill-list">
                                 <li className="skill card border">
-                                    <h3 className="skill-head">静态页面制作技术</h3>
+                                    <h3 className="skill-head">JS/TS</h3>
                                     <ul className="skill-con">
-                                        <li>像素级还原设计稿，可以实现响应式以适应手机屏幕</li>
-                                        <li>CSS3动画、Flex布局、Grid布局、CSS2布局</li>
+                                        <li>熟练掌握HTML(5)和常用CSS(3)，具有像素级还原设计稿的能力。</li>
+                                        <li>熟练掌握原生Javascript，掌握重要概念如:原型、闭包、作用域链、面向对象、事件循环、异步流程控制等概念。</li>
+                                        <li>能够对复杂函数进行功能化封装，并编写类似jQuery常用的基本功能性插件。</li>
+                                        <li>熟练使用ES6及ES7部分新特性。</li>
+                                        <li>熟练使用TypeScript。</li>
                                     </ul>
                                 </li>
                                 <li className="skill card border">
-                                    <h3 className="skill-head">熟练掌握原生JavaScript</h3>
+                                    <h3 className="skill-head">前端框架</h3>
                                     <ul className="skill-con">
-                                        <li>掌握原型、闭包、作用域链、面向对象、异步流程控制、事件循环等概念。</li>
                                         <li>能够进行模块化编程，使用Gulp、RequireJS、Webpack等多种方式处理工作流。</li>
-                                        <li>能够对复杂函数进行功能化封装，并编写类似jQuery常用的基本功能性插件</li>
-                                        <li>熟悉ES6部分新特性</li>
+                                        <li>熟悉Angular框架，能够独立架构小型项目，理解重要概念如: 生命周期，装饰器，单例服务等。能够封装功能组件和指令，配合RxJS控制异步流程。</li>
+                                        <li>了解React框架及相关流行库的使用，理解重要概念如: 生命周期，虚拟Dom，redux原理等,并具有项目实战经验。</li>
+                                        <li>了解Vue的基本使用，并了解其双向绑定和响应式原理。</li>
                                     </ul>
                                 </li>
                                 <li className="skill card border">
-                                    <h3 className="skill-head">移动端页面</h3>
+                                    <h3 className="skill-head">浏览器/网络</h3>
                                     <ul className="skill-con">
-                                        <li>熟悉手机端页面的开发流程</li>
-                                        <li>能够使用动态REM适配所有的手机屏幕</li>
-                                    </ul>
-                                </li>
-                                <li className="skill card border">
-                                    <h3 className="skill-head">与后端配合开发</h3>
-                                    <ul className="skill-con">
-                                        <li>了解HTTP协议及浏览器渲染原理</li>
-                                        <li>了解前端安全、网站性能优化</li>
-                                        <li>熟悉AJAX、Promise、CORS、JSONP</li>
-                                        <li>能够使用Node.js搭建静态服务器进行基本后台开发</li>
+                                       <li>了解HTTP协议，及浏览器常见特性如：事件机制、跨域、缓存、渲染机制等。</li>
+                                       <li>了解前端安全和性能优化策略。</li>
                                     </ul>
                                 </li>
                                 <li className="skill card border">
                                     <h3 className="skill-head">其他</h3>
                                     <ul className="skill-con">
-                                        <li>熟悉Npm、Git的基本使用</li>
-                                        <li>了解Less/Sass/PostCSS/Autoprefixer等CSS预处理和模块化工具</li>
-                                        <li>掌握基本的数据结构和算法</li>
-                                        <li>熟悉Vue及相关插件的使用</li>
-                                        <li>了解React的使用</li>
+                                        <li>熟悉Yarn、Npm和Git,能够使用Node.js搭配Express进行基本后台开发。</li>
+                                        <li>熟悉CMD&AMD机制，熟悉Webpack打包，及优化手段。</li>
+                                        <li>了解Less/Sass/PostCSS/Autoprefixer等CSS预处理和模块化工具。</li>
+                                        <li>掌握基本的数据结构和算法。</li>
                                     </ul>
                                 </li>
                             </ul>
@@ -134,29 +128,28 @@ export default class ResumePdf extends Component {
                             <h4 className="title">工作项目</h4>
                             <ul>
                                 <li className="border card">
+                                    <a href="https://shenfeng1945.xyz/weme/weme.gif" target="_blank" rel="noopener noreferrer">WEME语音智能交互</a>
+                                    <p className="project-con">这是一个养生，美容，育儿类语音智能App，拥有四种角色，选择你喜欢的角色，可以跟它对话，通过语音给角色发送各种动作和表情指令。同时可以进入不同的场景，在该场景内通过语音提问，得到想要的内容。</p>
+                                    <ul className="project-con">
+                                        <li>技术栈： Angular + TypeScript + RxJS + Ionic + Cordova</li>
+                                        <li>预览地址： <a href="https://shenfeng1945.xyz/weme/weme.mp4" target="_blank" rel="noopener noreferrer">https://shenfeng1945.xyz/weme/weme.mp4</a></li>
+                                    </ul>
+                                </li>
+                                <li className="border card">
+                                    <a href="https://icook.shentop.com">圣托智能餐饮</a>
+                                    <p className="project-con">微信端: 基于微信公众号的点餐平台，利用Three.js导入3D模型，添加了更加真实的3D场景和3D角色，配合微信SDK的语音功能实现语音点餐和语音支付。</p>
+                                    <p className="project-con">商家后台: 可以添加，下架菜品和菜类，显示交易数额的商家后台，使用Ionic打包成Android的Apk。</p>
+                                    <ul className="project-con">
+                                        <li>技术栈：Angular6 + Three.js + Ionic</li>
+                                        <li>预览地址(微信端)： <a href="https://icook.shentop.com" target="_blank" rel="noopener noreferrer">https://icook.shentop.com</a></li>
+                                    </ul>
+                                </li>
+                                <li className="border card">
                                     <a href="http://shop.e-caretech.net/">惠护爱真</a>
                                     <p className="project-con">这是一个护理，保健仪器类的商城管理平台,拥有移动端页面，后台管理页面和网点端页面。后台可以发布各种类型商品，商城页面可以登陆后，填写自己的收获地址并支付购买，订单确定后，对应网点的客服人员会帮你送货上门，并上门安装，之后还可以享受维修和保养服务。</p>
                                     <ul className="project-con">
                                         <li>功能：登录注册，加入购物车，付款，退换货，维修保养，开发票，会员，优惠券</li>
                                         <li>预览地址： <a href="http://shop.e-caretech.net/" target="_blank" rel="noopener noreferrer">http://shop.e-caretech.net/</a></li>
-                                    </ul>
-                                </li>
-                                <li className="border card">
-                                    <a href="http://shenfeng1945.top/tesla-game">特斯拉赛车游戏</a>
-                                    <p className="project-con">几百人同时玩这个赛车竞速游戏，控制刹车和加速，在规定时间内跑完全程，车通过随机出现的路障时有速度限制，超过了就要扣分，并计入总成绩，最终看谁用时最短。</p>
-                                    <ul className="project-con">
-                                        <li>实现：通过Canvas API不断绘制图形，达到动画效果。</li>
-                                        <li>项目地址： <a href="https://www.github.com/shenfeng1945/tesla-game" target="_blank" rel="noopener noreferrer">https://www.github.com/shenfeng1945/tesla-game</a></li>
-                                        <li>预览地址： <a href="http://shenfeng1945.top/tesla-game" target="_blank" rel="noopener noreferrer">http://shenfeng1945.top/tesla-game</a></li>
-                                    </ul>
-                                </li>
-                                <li className="border card">
-                                    <a href="http://shenfeng1945.top/ad-system">上映科技广告平台</a>
-                                    <p className="project-con">公司广告发布系统，现只有静态页面，暂无数据交互</p>
-                                    <ul className="project-con">
-                                        <li>实现：Jquery+CSS3</li>
-                                        <li>项目地址： <a href="https://www.github.com/shenfeng1945/ad-system" target="_blank" rel="noopener noreferrer">https://www.github.com/shenfeng1945/ad-system</a></li>
-                                        <li>预览地址： <a href="http://shenfeng1945.top/ad-system" target="_blank" rel="noopener noreferrer">http://shenfeng1945.top/ad-system</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -170,55 +163,33 @@ export default class ResumePdf extends Component {
                             <h4 className="title">个人项目</h4>
                             <ul>
                                 <li className="border card">
-                                    <a href="http://shenfeng1945.top/vue-youzan/dist">Vue重构有赞商城</a>
-                                    <p className="project-con">使用Vue重构有赞商城以及多页面的应用,使用Rap模拟数据。旨在熟悉vue在项目中的具体应用。</p>
+                                    <a href="https://shenfeng1945-sticky.netlify.com">Sticky在线便利贴</a>
+                                    <p className="project-con">利用Github授权登录，配合JWT，生成你自己的便利贴，可以添加，删除内容，标记重要程度和是否完成，同时支持按星级和创建时间进行排序，便于管理查看你的内容，是一个记录日常生活的实用小工具。</p>
                                     <ul className="project-con">
-                                        <li>技术栈：vue-cli+Router+Vuex+Rap</li>
-                                        <li>项目地址： <a href="https://www.github.com/shenfeng1945/vue-youzan" target="_blank" rel="noopener noreferrer">https://www.github.com/shenfeng1945/vue-youzan</a></li>
-                                        <li>预览地址： <a href="http://shenfeng1945.top/vue-youzan/dist" target="_blank" rel="noopener noreferrer">http://shenfeng1945.top/vue-youzan/dist</a></li>
+                                        <li>技术栈：Vue + Express + Sequelize + Oauth2 + Jquery</li>
+                                        <li>项目地址： <a href="https://github.com/shenfeng1945/sticky-note-vue/tree/dev" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/sticky-note-vue/tree/dev</a></li>
+                                        <li>预览地址： <a href="https://shenfeng1945-sticky.netlify.com" target="_blank" rel="noopener noreferrer">https://shenfeng1945-sticky.netlify.com</a></li>
                                     </ul>
                                 </li>
                                 <li className="border card">
-                                    <a href="#">英雄联盟仿站</a>
-                                    <p className="project-con">这是一个PC端的静态网页，像素级还原英雄联盟官网</p>
+                                    <a>IM即时通讯应用</a>
+                                    <p className="project-con">基于环信IMSDK搭建一个IM系统，包含单聊，登录，注册，更换头像，搜索用户，添加好友等模块。</p>
                                     <ul className="project-con">
-                                        <li>技术栈:jQuery + ES6 + CSS3</li>
-                                        <li>该项目目的在于能够精确还原原稿的每一个细节，提升自己的css/html水平</li>
-                                        <li>项目地址： <a href="https://github.com/shenfeng1945/demojs/tree/master/lol-page" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/demojs/tree/master/lol-page</a></li>
-                                        <li>预览地址： <a href="https://shenfeng1945.github.io/demojs/lol-page" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/demojs/lol-page</a></li>
+                                        <li>技术栈:React全家桶 + Express + Mongoose + Mlab</li>
+                                        <li>由于环信SDK不支持查看所有用户和设置头像功能，后台起着保存用户信息的作用。</li>
+                                        <li>项目地址： <a href="https://github.com/shenfeng1945/react-im" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/react-im</a></li>
+                                        <li>预览地址： <a href="https://react-im.netlify.com" target="_blank" rel="noopener noreferrer">https://react-im.netlify.com</a></li>
                                     </ul>
                                 </li>
                                 <li className="border card">
-                                    <a href="#">在线Canvas画板</a>
-                                    <p className="project-con">这是一个PC端的在线画板，能在上面画东西</p>
+                                    <a>CloudSearch</a>
+                                    <p className="project-con">这是一个集成了Github搜索，音乐搜索和音乐播放的应用，配合RxJS旨在学习响应式编程在项目中的应用。</p>
                                     <ul className="project-con">
-                                        <li>功能: 调色且颜色可自定义、添加图形、改变画笔粗细、橡皮擦、图片导出下载和预览</li>
-                                        <li>实现: 使用jQuery、Canvas API和双向绑定实现一个多功能的PC端在线画板</li>
-                                        <li>项目地址： <a href="https://github.com/shenfeng1945/Canvas" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/Canvas</a></li>
-                                        <li>预览地址： <a href="https://shenfeng1945.github.io/Canvas" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/Canvas</a></li>
+                                        <li>技术栈: Angular/Cli + RxJS</li>
+                                        <li>项目地址： <a href="https://github.com/shenfeng1945/angular-mix" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/angular-mix</a></li>
+                                        <li>预览地址： <a href="https://cloudsearch.netlify.com" target="_blank" rel="noopener noreferrer">https://cloudsearch.netlify.com</a></li>
                                     </ul>
                                 </li>
-                                <li className="border card">
-                                    <a href="#">移动端网易云音乐</a>
-                                    <p className="project-con">这是一个网易云音乐手机端播放页面应用。能够实现曲库列表实时更新、搜索数据请求、歌曲播放、暂停、重新播放等效果</p>
-                                    <ul className="project-con">
-                                        <li>功能: 歌曲播放、歌单实时更新、曲库搜索、歌词滚动</li>
-                                        <li>部署：LeanCloud + 七牛云</li>
-                                        <li>项目地址： <a href="https://github.com/shenfeng1945/NetEaseMusic" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/NetEaseMusic</a></li>
-                                        <li>预览地址： <a href="https://shenfeng1945.github.io/NetEaseMusic/jump.html" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/NetEaseMusic/jump.html</a></li>
-                                    </ul>
-                                </li>
-                                <li className="border card">
-                                    <a href="#">在线Todo应用</a>
-                                    <p className="project-con">使用React实现代办事项管理</p>
-                                    <ul className="project-con">
-                                        <li>这是一个在线代办事项管理应用，支持注册，支持增删改查，云同步，视图切换等功能</li>
-                                        <li>技术栈：React + ES6 + LeanCloud后端服务</li>
-                                        <li>项目地址： <a href="https://github.com/shenfeng1945/React-Todo" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/React-Todo</a></li>
-                                        <li>预览地址： <a href="https://shenfeng1945.github.io/React-Todo/build/" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/React-Todo/build/</a></li>
-                                    </ul>
-                                </li>
-
                             </ul>
                         </div>
                     </section >

@@ -102,10 +102,14 @@
     padding:15px 30px;
     display: inline-block;
     vertical-align:middle;
+    margin: 0 5px;
 
 }
 .about .bio .buttons .btn:hover{
     background:#fff;
     color:#50626c;
     border-color:#50626c;
+}
+.about .work-experience{
+    display: flex;
 }

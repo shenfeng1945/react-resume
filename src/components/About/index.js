@@ -18,11 +18,17 @@ export default class About extends Component {
                         <div className="bio-inner">
                             <div className="bio-description">
                                 <p>热爱计算机科学和互联网技术，关注Web发展，对新技术充满激情，良好的学习习惯，自学能力强。热爱生活，喜欢每天都富有激情的工作状态。性格乐观，能积极面对压力。</p>
+                                <p>熟悉 HTML、CSS、Javascript，能熟练使用Angular和React，有良好的编码习惯。</p>
                                 <p>教育背景: 理学学士
                                     <small>(2011-2015)</small>
                                 </p>
-                                <p>工作经历：上映科技(2017.11-2018.3) Web工程师</p>
-                                <p>熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用jQuery，有良好的编码习惯以及熟练使用开发调试工具。无分号，空格缩进拥护者。</p>
+                                <div className="work-experience">
+                                    <span>工作经历:</span>
+                                    <ol>
+                                        <li>上映科技(2017.10-2018.3) 前端工程师</li>
+                                        <li>天体万物智能科技(2018.4-2018.10) 前端工程师</li>
+                                    </ol>
+                                </div>
                             </div>
                             <div className="buttons">
                                 <a className="btn" href="mailto:liuzhichao1993@foxmail.com">Hire Me</a>

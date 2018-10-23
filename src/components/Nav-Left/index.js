@@ -80,7 +80,7 @@ export default class NavLeft extends Component {
                                 <use xlinkHref="#icon-github"></use>
                             </svg>
                         </a >
-                        <a href="javascript:;">
+                        <a>
                             <svg>
                                 <use xlinkHref="#icon-weibotaidu"></use>
                             </svg>
