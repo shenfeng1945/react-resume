@@ -2,6 +2,7 @@
   "name": "react-resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shenfeng1945.github.io/react-resume/build",
   "dependencies": {
     "classnames": "^2.2.6",
     "react": "^16.5.2",
