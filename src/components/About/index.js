@@ -9,7 +9,8 @@ export default class About extends Component {
                 <main>
                     <div className="profile-image">
                         <div className="img-container">
-                            <img src="http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/avatar.png" alt="头像" />
+                            {/* <img src="http://codetic.net/demo/themes/privado/wp-content/themes/privado/img/avatar.png" alt="头像" /> */}
+                            <img src="https://i.loli.net/2019/12/10/PKlzGbLWTauivBC.png" alt="头像"/>
                         </div>
                         <h2>刘智超</h2>
                         <h3>前端开发 Front-End Web Developer</h3>

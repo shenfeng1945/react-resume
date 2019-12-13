@@ -7,7 +7,7 @@ export default class ResumePdf extends Component {
             <div className="resume-pdf">
                 <header>
                     <div className="head">
-                        <p><strong>在线简历：</strong><a href="https://react-resume.netlify.com" target="_blank" rel="noopener noreferrer">https://react-resume.netlify.com</a></p>
+                        {/* <p><strong>在线简历：</strong><a href="https://shenfeng1945.netlify.com" target="_blank" rel="noopener noreferrer">https://shenfeng1945.netlify.com</a></p> */}
                         <div className="img">
                             <img src="https://s1.ax1x.com/2017/10/15/JZrUH.png" alt="头像" width="100" height="100" />
                         </div>
@@ -72,6 +72,7 @@ export default class ResumePdf extends Component {
                             <div className="card border">
                                 <p>上映科技,2017.10-2018.3,前端工程师</p>
                                 <p>天体万物智能科技,2018.4-2018.10,前端工程师</p>
+                                <p>博彦科技(腾讯云外包),2018.11-2019.9,前端工程师</p>
                             </div>
                         </div>
                     </section >
@@ -127,14 +128,22 @@ export default class ResumePdf extends Component {
                             <h4 className="title">工作项目</h4>
                             <ul>
                                 <li className="border card">
-                                    <a href="https://shenfeng1945.xyz/weme/weme.gif" target="_blank" rel="noopener noreferrer">WEME语音智能交互</a>
-                                    <p className="project-con">这是一个养生，美容，育儿类语音智能App，拥有四种角色，选择你喜欢的角色，可以跟它对话，通过语音给角色发送各种动作和表情指令。同时可以进入不同的场景，在该场景内通过语音提问，得到想要的内容。</p>
+                                    <a href="https://console.cloud.tencent.com/beian" target="_blank" rel="noopener noreferrer">腾讯云网站备案</a>
+                                    <p className="project-con">日常维护网站备案系统，处理备案异常工单，修复bug，重构备案系统。</p>
                                     <ul className="project-con">
-                                        <li>技术栈： Angular + TypeScript + RxJS + Ionic + Cordova</li>
-                                        <li>预览地址： <a href="https://shenfeng1945.xyz/weme/weme.mp4" target="_blank" rel="noopener noreferrer">https://shenfeng1945.xyz/weme/weme.mp4</a></li>
+                                        <li>技术栈： React + TypeScript + Redux</li>
+                                        <li>预览地址： <a href="https://console.cloud.tencent.com/beian" target="_blank" rel="noopener noreferrer">https://console.cloud.tencent.com/beian</a></li>
                                     </ul>
                                 </li>
                                 <li className="border card">
+                                    <a href="https://shenfeng1945.cn/weme/weme.mp4" target="_blank" rel="noopener noreferrer">WEME语音智能交互</a>
+                                    <p className="project-con">这是一个养生，美容，育儿类语音智能App，拥有四种角色，选择你喜欢的角色，可以跟它对话，通过语音给角色发送各种动作和表情指令。同时可以进入不同的场景，在该场景内通过语音提问，得到想要的内容。</p>
+                                    <ul className="project-con">
+                                        <li>技术栈： Angular + TypeScript + RxJS + Ionic + Cordova</li>
+                                        <li>预览地址： <a href="https://shenfeng1945.cn/weme/weme.mp4" target="_blank" rel="noopener noreferrer">https://shenfeng1945.cn/weme/weme.mp4</a></li>
+                                    </ul>
+                                </li>
+                                {/* <li className="border card">
                                     <a href="https://icook.shentop.com">圣托智能餐饮</a>
                                     <p className="project-con">微信端: 基于微信公众号的点餐平台，利用Three.js导入3D模型，添加了更加真实的3D场景和3D角色，配合微信SDK的语音功能实现语音点餐和语音支付。</p>
                                     <p className="project-con">商家后台: 可以添加，下架菜品和菜类，显示交易数额的商家后台，使用Ionic打包成Android的Apk。</p>
@@ -150,7 +159,7 @@ export default class ResumePdf extends Component {
                                         <li>功能：登录注册，加入购物车，付款，退换货，维修保养，开发票，会员，优惠券</li>
                                         <li>预览地址： <a href="http://shop.e-caretech.net/" target="_blank" rel="noopener noreferrer">http://shop.e-caretech.net/</a></li>
                                     </ul>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </section >
@@ -161,6 +170,15 @@ export default class ResumePdf extends Component {
                         <div className="info">
                             <h4 className="title">个人项目</h4>
                             <ul>
+                                <li className="border card">
+                                    <a href="https://shenfeng1945.github.io/FlyVue/">FlyVue UI</a>
+                                    <p className="project-con">该项目参照Element UI和blueprint库设计思路，做的一个基于Vue的简易UI组件库，目前支持按钮、输入框、布局、Tabs、Upload、Table等组件。每个组件包含从需求分析到Mocha单元测试，并基于TravisCI实现持续集成，最终以VuePress制作官方文档。</p>
+                                    <ul className="project-con">
+                                        <li>技术栈：Vue + VuePress + Mocha + TravisCI</li>
+                                        <li>项目地址： <a href="https://github.com/shenfeng1945/FlyVue" target="_blank" rel="noopener noreferrer">https://github.com/shenfeng1945/FlyVue</a></li>
+                                        <li>预览地址： <a href="https://shenfeng1945.github.io/FlyVue/" target="_blank" rel="noopener noreferrer">https://shenfeng1945.github.io/FlyVue/</a></li>
+                                    </ul>
+                                </li>
                                 <li className="border card">
                                     <a href="https://shenfeng1945-sticky.netlify.com">Sticky在线便利贴</a>
                                     <p className="project-con">利用Github授权登录，配合JWT，生成你自己的便利贴，可以添加，删除内容，标记重要程度和是否完成，同时支持按星级和创建时间进行排序，便于管理查看你的内容，是一个记录日常生活的实用小工具。</p>
